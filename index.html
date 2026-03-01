@@ -1,75 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="uz">
 <head>
-    <title>murodbektojiev</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murodbek - Bio</title>
     <style>
+        /* Umumiy sahifa ko'rinishi */
         body {
-            margin: 0;
-            background-color: #000;
-            color: white;
-            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
 
+        /* Karta uslubi */
         .card {
-            background-color: #111;
-            padding: 40px;
+            background-color: white;
+            padding: 30px;
             border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
-            width: 400px;
-            box-shadow: 0 0 25px rgba(255,255,255,0.1);
+            max-width: 400px;
+            width: 90%;
         }
 
         h1 {
+            color: #333;
             margin-bottom: 10px;
         }
 
         p {
-            color: #ccc;
+            color: #666;
             line-height: 1.6;
+            margin-bottom: 25px;
         }
 
-        .buttons {
-            margin-top: 20px;
-        }
-
-        a {
+        /* Tugmalar uchun umumiy uslub */
+        .buttons a {
             display: inline-block;
-            text-decoration: none;
-            background-color: white;
-            color: black;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 8px;
+            padding: 12px 25px;
+            margin: 8px;
+            border-radius: 10px;
             font-weight: bold;
-            transition: 0.3s;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 16px;
         }
 
-        a:hover {
-            background-color: #444;
+        /* GitHub tugmasi - Brend rangi (To'q kulrang/Qora) */
+        #github-btn {
+            background-color: #24292e;
             color: white;
-            transform: scale(1.05);
         }
+
+        /* Instagram tugmasi - Brend rangi (Pushti/Gradient) */
+        #instagram-btn {
+            background-color: #E1306C;
+            color: white;
+        }
+
+        /* Sichqoncha ustiga kelganda effektlar */
+        .buttons a:hover {
+            transform: scale(1.08);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Har birining hover holatida rangini biroz o'zgartirish */
+        #github-btn:hover {
+            background-color: #444;
+        }
+
+        #instagram-btn:hover {
+            background-color: #c13584;
+        }
+
     </style>
 </head>
-
 <body>
+
     <div class="card">
         <h1>Salom 👋</h1>
         <p>
-            Ismim Tojiyev Murodbek. Hozirda TUIT talabasiman.
-            22-dekabr 2007 yilda tug'ilganman.
-            Github va Instagram orqali meni yaqinroq bilib olishingiz mumkin.
+            Ismim Tojiyev Murodbek. Hozirda TUIT talabasiman.<br>
+            22-dekabr 2007-yilda tug'ilganman.<br>
+            GitHub va Instagram orqali meni yaqinroq bilib olishingiz mumkin.
         </p>
 
         <div class="buttons">
-            <a href="https://github.com/murodtojiev" target="_blank">GitHub</a>
-            <a href="https://www.instagram.com/murodtojiev_" target="_blank">Instagram</a>
+            <a id="github-btn" href="https://github.com/murodtojiev" target="_blank">GitHub</a>
+            
+            <a id="instagram-btn" href="https://www.instagram.com/murodtojiev_" target="_blank">Instagram</a>
         </div>
     </div>
+
 </body>
 </html>
