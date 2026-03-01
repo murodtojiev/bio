@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Murodbek Tojiyev - Portfolio">
+    <meta property="og:description" content="TUIT talabasi, dasturlashga qiziquvchi.">
+    <meta property="og:image" content="https://github.com/murodtojiev.png">
+
     <title>Murodbek - Bio</title>
+
     <style>
         /* Umumiy sahifa ko'rinishi */
         body {
@@ -20,29 +26,40 @@
         .card {
             background-color: white;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
-            max-width: 400px;
+            max-width: 350px;
             width: 90%;
+        }
+
+        /* Profil rasmi uslubi */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #eee;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
         h1 {
             color: #333;
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
 
         p {
             color: #666;
             line-height: 1.6;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         /* Tugmalar uchun umumiy uslub */
         .buttons a {
-            display: inline-block;
-            padding: 12px 25px;
-            margin: 8px;
+            display: block; /* Tugmalarni ustma-ust tushishi uchun */
+            padding: 12px 20px;
+            margin: 10px 0;
             border-radius: 10px;
             font-weight: bold;
             text-decoration: none;
@@ -50,48 +67,40 @@
             font-size: 16px;
         }
 
-        /* GitHub tugmasi - Brend rangi (To'q kulrang/Qora) */
+        /* GitHub tugmasi - Brend rangi */
         #github-btn {
             background-color: #24292e;
             color: white;
         }
 
-        /* Instagram tugmasi - Brend rangi (Pushti/Gradient) */
+        /* Instagram tugmasi - Brend rangi */
         #instagram-btn {
             background-color: #E1306C;
             color: white;
         }
 
-        /* Sichqoncha ustiga kelganda effektlar */
+        /* Effektlar */
         .buttons a:hover {
-            transform: scale(1.08);
+            transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            opacity: 0.9;
         }
-
-        /* Har birining hover holatida rangini biroz o'zgartirish */
-        #github-btn:hover {
-            background-color: #444;
-        }
-
-        #instagram-btn:hover {
-            background-color: #c13584;
-        }
-
     </style>
 </head>
 <body>
 
     <div class="card">
+        <img src="https://github.com/murodtojiev.png" alt="Murodbek" class="profile-img">
+        
         <h1>Salom 👋</h1>
         <p>
-            Ismim Tojiyev Murodbek. Hozirda TUIT talabasiman.<br>
+            Ismim <b>Tojiyev Murodbek</b>. Hozirda TUIT talabasiman.<br>
             22-dekabr 2007-yilda tug'ilganman.<br>
             GitHub va Instagram orqali meni yaqinroq bilib olishingiz mumkin.
         </p>
 
         <div class="buttons">
             <a id="github-btn" href="https://github.com/murodtojiev" target="_blank">GitHub</a>
-            
             <a id="instagram-btn" href="https://www.instagram.com/murodtojiev_" target="_blank">Instagram</a>
         </div>
     </div>
