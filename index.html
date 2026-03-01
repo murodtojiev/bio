@@ -5,38 +5,71 @@
 
     <style>
         body {
-            background-color: black;
+            margin: 0;
+            background-color: #000;
             color: white;
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #111;
+            padding: 40px;
+            border-radius: 15px;
             text-align: center;
+            width: 400px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 20px;
         }
 
         a {
+            display: inline-block;
+            text-decoration: none;
             background-color: white;
             color: black;
-            border: none;
             padding: 10px 20px;
-            font-size: 20px;
+            margin: 10px;
             border-radius: 8px;
-            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         a:hover {
-            background-color: gray;
+            background-color: #444;
             color: white;
+            transform: scale(1.05);
         }
     </style>
 </head>
+
 <body>
-    <h1>Salom!</h1>
-    <p>Bu mening birinchi veb-saytim.</p>
+    <div class="card">
+        <h1>Salom 👋</h1>
+        <p>
+            Ismim Tojiyev Murodbek. Hozirda TUIT talabasiman.
+            22-dekabr 2007 yilda tug'ilganman.
+            Github va Instagram orqali meni yaqinroq bilib olishingiz mumkin.
+        </p>
 
-    <h2>Men haqimda</h2>
-    <p>Ismim Tojiyev Murodbek. Hozirda TUIT talabasiman. Yoshim 18 da 22_dekabr 2007 yilda tug'ilganman.
-        Github va Instagram dan meni yanada yaxshiroq bilib olishingiz mumkin.
-    </p>
-
-    <a href="https://github.com/murodtojiev">github</a>
-    <a href="https://www.instagram.com/murodtojiev_" target="_blank">Instagram</a>
+        <div class="buttons">
+            <a href="https://github.com/murodtojiev" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/murodtojiev_" target="_blank">Instagram</a>
+        </div>
+    </div>
 </body>
 </html>
